@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+</head>
+<body>
+  <h1>Create Account</h1>
+  <h2>Detail Account</h2>
+  <form action="landingPage.html">
+    <p>First name :</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Last name :</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Username :</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Email :</p>
+    <input type="email" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Gender :</p>
+    <input type="radio" id="male" value="male" required name="gender">
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" id="female" value="female" required name="gender">
+    <label for="female">Female</label>
+    <br>
+    <input type="radio" id="other" value="other" required name="gender">
+    <label for="other">Other</label>
+    <br>
+    <p>Addres</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Address 2</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Nasionality :</p>
+    <p style="font-size: 12px;">Nasionality</p>
+    <select name="nasionality" id="nasionality" required>
+      <option>Category 1</option>
+      <option>Category 2</option>
+      <option>Category 3</option>
+      <option>Category 4</option>
+    </select>
+    <p>Language Spoken :</p>
+    <input type="checkbox" id="indo" name="indo" value="indo" required>
+    <label for="indo"> Bahasa Indonesia</label><br>
+    <input type="checkbox" id="english" name="english" value="english" required>
+    <label for="english"> English</label><br>
+    <input type="checkbox" id="other" name="other" value="other" required>
+    <label for="other"> Other</label><br><br>
+    <input type="submit" value="Create Account">
+  </form>
+</body>
+</html>

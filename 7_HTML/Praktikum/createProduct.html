@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Product</title>
+</head>
+<body>
+  <h1>Create Product</h1>
+  <h2>Detail Product</h2>
+  <form action="landingPage.html">
+    <p>Product name :</p>
+    <input type="text" style="width: 159px; height: 14px;" minlength="6" maxlength="50" required>
+    <p>Product Category :</p>
+    <select name="category" id="category" required>
+      <option>Category 1</option>
+      <option>Category 2</option>
+      <option>Category 3</option>
+      <option>Category 4</option>
+    </select>
+    <p>Product Freshness :</p>
+    <input type="radio" id="brandnew" value="brandnew" required name="freshness">
+    <label for="brandnew">Brand New</label>
+    <br>
+    <input type="radio" id="secondhank" value="secondhank" required name="freshness">
+    <label for="secondhank">Second Hank</label>
+    <br>
+    <input type="radio" id="refurbished" value="refurbished" required name="freshness">
+    <label for="refurbished">Refurbished</label>
+    <br>
+    <p>Image of product <input type="file" id="myFile" name="filename" required></p>
+    <p>Additional Description</p>
+    <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+    <p>Product price :</p>
+    <input type="number" placeholder="$100" style="width: 47px; height: 18px;" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
