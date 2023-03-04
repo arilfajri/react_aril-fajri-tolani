@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Competance 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .nav-link {
+        color: #FFC107;
+      }
+
+      .navbar-brand{
+        margin-left: 50px;
+      }
+
+      .judul {
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background-repeat: no-repeat center center scroll;
+        background-size: cover;
+      }
+
+      .carousel-item img {
+
+        filter: brightness(50%);
+      }
+
+      .carousel-caption {
+        margin-bottom: 150px;
+      }
+
+      .carousel {
+        box-shadow: 0px 4px 6px -1px rgba(255, 255, 255, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/aril.png" alt="" width="60px">
+          </a>
+          <h2 class="mt-2 judul"> Movie</h2>
+          <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end round" id="navbarNavDropdown">
+              <ul class="navbar-nav gap-3 text-sm-center mt-lg-auto" style="margin-right: 50px; font-size: 20px;">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#footer">Footer</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <!-- navbar -->
+
+  <!-- slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/end.jpg" class="d-block w-100 h-100" alt="...">
+        <div class="carousel-caption">
+          <h1>Selamat Datang Di Website Aril Movie</h1>
+          <p>Aril Movie adalah layanan streaming yang menawarkan berbagai acara TV pemenang penghargaan, film, anime, dokumenter, dan banyak lagi di ribuan perangkat yang terhubung ke Internet. Kamu bisa menonton sepuasnya, kapan pun kamu mau semuanya dengan satu harga bulanan yang murah.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/blood.jpg" class="d-block w-100 h-100" alt="...">
+        <div class="carousel-caption">
+          <h1>Bloodshot</h1>
+          <p>Berdasarkan buku komik terlaris, dibintangi Vin Diesel sebagai Ray Garrison, seorang prajurit yang terbunuh dalam tugasnya dan dihidupkan kembali sebagai pahlawan super oleh perusahaan RST. Dengan sepasukan nanoteknologi di nadinya, kekuatan yang lebih kuat dari sebelumnya dan mampu menyembuhkan luka dengan sangat cepat.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/spider.jpg" class="d-block w-100 h-100" alt="...">
+        <div class="carousel-caption">
+          <h1>Spider-Man: Far From Home</h1>
+          <p>Peter Parker (Tom Holland) tengah mengunjungi Eropa untuk liburan panjang bersama temaan-temanya. Sayangnya , Parker tidak bisa dengan tenang menikmati liburannya, karena Nick Fury datang secara tiba-tiba di kamar hotelnya. Selama di Eropa pun Peter harus menghadapi banyak musuh mulai dari Hydro Man, Sandman dan Molten Man.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- akhir -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="container pt-5 pb-5">
+          <div class="row">
+              <div class="col text-center mb-5">
+                  <h1 class="kontak">Contact</h1>
+                  <hr>
+              </div>
+          </div>
+          <div class="row justify-content-center">
+              <div class="col-lg-4">
+                  <div class="card text-white bg-primary mb-3 text-center">
+                          <div class="card-body bg-dark">
+                              <i class="fa fa-envelope-o fa-2x mb-2"></i>
+                              <h3 class="card-title">Contact Info</h3>
+                          </div>
+                  </div>
+                  <ul class="list-group text-center">
+                      <li class="list-group-item"><h1 class="location">Location</h1></li>
+                      <li class="list-group-item">Our Addres</li></li>
+                      <li class="list-group-item">Bandung</li>
+                      <li class="list-group-item">Jawa Barat, Indonesia</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6">
+                <form>
+                  <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname" >
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" >
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" >
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="pesan" id="message" class="form-control" ></textarea>
+                  </div>
+                  <div class="form-group">
+                  <button type="button" class="btn btn-secondary mt-3" id="submit-button">Submit</button>
+                  </div>
+              </form>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- contact -->
+
+<!-- footer -->
+<footer class="bg-dark text-white pt-5 pb-4" id="footer">
+	<div class="container text-md-left">
+		<div class="row text-md-left">
+			<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+				<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Aril Movie</h5>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto expedita itaque laborum consectetur reprehenderit blanditiis aperiam voluptatibus dicta minus quas.</p>
+			</div>
+
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+				<h5 class="text-uppercase mb-4 font-weight-bold text-warning">Social Media</h5>
+        <p>
+          <a href="https://twitter.com/areel_tolani" class="btn-floating btn-sm text-white" style="font-size: 20px; text-decoration: none;"><i class="fab fa-twitter"></i> areel_tolani</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/_aareel/" class="btn-floating btn-sm text-white" style="font-size: 20px; text-decoration: none;"><i class="fab fa-instagram"></i> _aareel</a>
+        </p>
+        <p>
+          <a href="https://www.tiktok.com/@areel_f" class="btn-floating btn-sm text-white" style="font-size: 20px; text-decoration: none;"><i class="fab fa-tiktok"></i> areel_f</a>
+        </p>
+			</div>
+
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+				<h5 class="text-uppercase mb-4 font-weight-bold text-warning" >Contact</h5>
+				<p>
+					<i class="fas fa-home mr-3"></i> Bandung, Jawa Barat Indonesia
+				</p>
+				<p>
+					<i class="fas fa-envelope mr-3"></i> arielmunchen60@gmail.com
+				</p>
+				<p>
+					<i class="fas fa-phone mr-3"></i> +62 82188216081
+				</p>
+			</div>
+		</div>
+
+		<hr class="mb-4">
+		<div class="row align-items-center text-center">
+			<div class="col-md-12 col-lg-12">
+				<p>	Copyright ©2023 All rights reserved by:
+						<strong class="text-warning">Aril Fajri Tolani</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer -->
+
+    <script>
+      // menampilkan alert ketika button submit diklik
+      const submit = document.getElementById("submit-button");
+      submit.addEventListener("click", function() {
+        const firstName = document.getElementById("firstname").value;
+        const lastName = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        alert("First Name : " + firstName + "\nLast Name : " + lastName + "\nEmail : " + email + "\nMessage : " +message)
+      })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
