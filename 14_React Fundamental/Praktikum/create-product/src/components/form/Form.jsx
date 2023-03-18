@@ -32,7 +32,7 @@ function Form() {
                 id="productname"
                 aria-describedby="textHelp"
                 name="productname"
-                required=""
+                required
               />
               <div className="invalid-feedback">
                 Anda harus mengisi nama produk!
@@ -52,7 +52,7 @@ function Form() {
                 aria-label="Default select example"
                 name="productcategory"
                 id="productcategory"
-                required=""
+                required
               >
                 <option selected="" disabled="" value="">
                   Choose..
@@ -83,7 +83,7 @@ function Form() {
                 height="32px"
                 width="200px"
                 name="image-product"
-                required=""
+                required
               />
               <div className="invalid-feedback">Tolong pilih gambar produk</div>
               <div className="valid-feedback">
@@ -103,7 +103,7 @@ function Form() {
                   type="radio"
                   name="radioproduct"
                   defaultValue="Brand New"
-                  required=""
+                  required
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault1">
                   Brand New
@@ -118,7 +118,7 @@ function Form() {
                   type="radio"
                   name="radioproduct"
                   defaultValue="Second Hand"
-                  required=""
+                  required
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault2">
                   Second Hand
@@ -133,7 +133,7 @@ function Form() {
                   type="radio"
                   name="radioproduct"
                   defaultValue="Refurbished"
-                  required=""
+                  required
                 />
                 <label className="form-check-label" htmlFor="flexRadioDefault3">
                   Refurbished
@@ -154,7 +154,7 @@ function Form() {
                     placeholder="Leave a comment here"
                     id="description"
                     style={{ height: 100 }}
-                    required=""
+                    required
                     defaultValue={""}
                   />
                   <label htmlFor="floatingTextarea2" />
@@ -178,7 +178,7 @@ function Form() {
                   id="productprice"
                   aria-describedby="textHelp"
                   placeholder="$ 1"
-                  required=""
+                  required
                 />
                 <div className="invalid-feedback">Harga produk wajib diisi!</div>
                 <div className="valid-feedback">
