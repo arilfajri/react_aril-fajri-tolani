@@ -1,8 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Table({productData, handleDelete, handleEdit}) {
-  const navigate = useNavigate();
   return (
         <div>
           <table className="table table-striped mt-3" id="table">
@@ -17,9 +16,13 @@ function Table({productData, handleDelete, handleEdit}) {
               </tr>
             </thead>
             <tbody id="table-body">
-            {productData.map((product, index) => (
+            {productData.map((product) => (
                 <tr key={product.id}>
-                  <td>{1000 + index + 1}</td>
+                  <td>
+                    <Link to={`/account/${product.id}`} state={product}>
+                      {product.id}
+                    </Link>
+                  </td>
                   <td>{product.name}</td>
                   <td>{product.category}</td>
                   <td>{product.freshness}</td>
@@ -33,6 +36,7 @@ function Table({productData, handleDelete, handleEdit}) {
             </tbody>
           </table>
         </div>
+
       )
 
   }

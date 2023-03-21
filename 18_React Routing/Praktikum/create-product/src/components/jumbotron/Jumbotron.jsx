@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import logo from "../../img/assets/img/img.png"
 
 const Jumbotron = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Jumbotron = () => {
         <p>
           We are team of talented designers making websites with <br /> Bootstrap
         </p>
-        <img src="" alt="" className="img" />
+        <img src={logo} alt="" className="img" />
         <button className="getstarted" onClick={() => navigate('/createproduct')}>Create Product</button>
         <button className="video">Watch Video</button>
       </div>
