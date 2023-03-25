@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .nav-link {
+        color: #FFC107;
+      }
+
+      .navbar-brand{
+        margin-left: 50px;
+      }
+
+      .judul {
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background-repeat: no-repeat center center scroll;
+        background-size: cover;
+      }
+
+      .carousel-item img {
+
+        filter: brightness(50%);
+      }
+
+      .carousel-caption {
+        margin-bottom: 150px;
+      }
+
+      .carousel {
+        box-shadow: 0px 4px 6px -1px rgba(255, 255, 255, 0.3);
+      }
+      .about {
+        padding: 100px 0;
+    }
+
+    .about .row .col-md-6 .gambar img {
+        width: 93%;
+        border-radius: 0.2em;
+    }
+
+    .about .row .col-md-6:last-child {
+        position: relative;
+    }
+
+    .about .row .col-md-6 .panel {
+        background-color: white;
+        border-radius: 3px;
+        padding: 7vmin 5vmin 3.5vmin 10vmin;
+        box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    }
+
+    .gambar img{
+      width: 500px;
+    }
+
+    .testimonial{
+      background-color: #f7f7f7;
+    }
