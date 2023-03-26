@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-const LoginForm = () => {
+const LoginForm = ({setSignedIn}) => {
   const navigate = useNavigate();
-
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -29,11 +28,12 @@ const LoginForm = () => {
       if(user.email === values.email && user.password === values.password) {
         localStorage.setItem(
           "dataUser",
-          JSON.stringify({ ...user, Login:true})
+          JSON.stringify({ ...user})
 
         );
+        setSignedIn(true)
         alert('Login Succes')
-        return navigate("/landingpage")
+        return navigate("/")
       }else {
         alert('account not registered')
       }

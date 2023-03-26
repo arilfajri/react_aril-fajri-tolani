@@ -50,6 +50,11 @@ function Header() {
                     About
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/login">
+                    Logout
+                  </a>
+                </li>
               </ul>
             </div>
           </div>

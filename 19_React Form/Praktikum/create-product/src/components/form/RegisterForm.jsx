@@ -57,7 +57,7 @@ const RegisterForm = () => {
             confirmPassword: values.confirmPassword
           };
           localStorage.setItem("dataUser", JSON.stringify(dataUser));
-          navigate('/')
+          navigate('/login')
         }
     });
     return (
@@ -98,7 +98,7 @@ const RegisterForm = () => {
                       <input type="password" className="form-control" name="confirmPassword" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.confirmPassword} />
                       {formik.touched.confirmPassword && formik.errors.confirmPassword && <div className='error text-danger'>{formik.errors.confirmPassword}</div>}
                     </div>
-                    <p className='mt-2'>Sudaah memiliki akun? <Link to={'/'}>Login sekarang!</Link></p>
+                    <p className='mt-2'>Sudaah memiliki akun? <Link to={'/login'}>Login sekarang!</Link></p>
                     <div className="form-group text-center">
                       <button
                         type="submit"
