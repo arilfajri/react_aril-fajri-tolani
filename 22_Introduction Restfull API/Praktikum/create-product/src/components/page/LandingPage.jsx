@@ -1,0 +1,23 @@
+import React from 'react'
+import Content from '../content/Content'
+import Footer from '../footer/Footer'
+import HeaderLandingPage from '../header/HeaderLandingPage'
+import Jumbotron from '../jumbotron/Jumbotron'
+import './Landing.css'
+import { useEffect } from 'react'
+
+const LandingPage = () => {
+  useEffect(() => {
+    alert('Welcome');
+  }, []);
+  return (
+    <div>
+      <HeaderLandingPage />
+      <Jumbotron />
+      <Content />
+      <Footer />
+    </div>
+  )
+}
+
+export default LandingPage
