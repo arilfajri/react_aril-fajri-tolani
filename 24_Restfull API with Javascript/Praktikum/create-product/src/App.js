@@ -15,13 +15,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/createproduct" element={
+          <Route path="/createproduct" element={
             <ProtectedRoute isSignedIn={isSignedIn}>
               <CreateProduct setSignedIn={setIsSignedIn} />
             </ProtectedRoute>
-          } /> */}
-          <Route path="/createproduct" element={
-              <CreateProduct  />
           } />
           <Route path="/account/:id" element={
             <ProtectedRoute isSignedIn={isSignedIn}>
