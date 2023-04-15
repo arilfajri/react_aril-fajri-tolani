@@ -13,7 +13,7 @@ const httpLink = new HttpLink({
 
 const wsLink = new GraphQLWsLink(
   createClient({
-    url: "ws://credible-chipmunk-40.hasura.app/v1/graphql",
+    url: "wss://credible-chipmunk-40.hasura.app/v1/graphql",
     connectionParams: {
       headers: {
         "x-hasura-admin-secret":
