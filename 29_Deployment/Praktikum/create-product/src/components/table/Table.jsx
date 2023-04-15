@@ -22,7 +22,7 @@ import { gql, useQuery } from "@apollo/client";
 
 export const GET_PRODUCT = gql`
   subscription MySubscription {
-    products_list {
+    products_list(order_by: { productName: asc }) {
       additionalDescription
       id
       imageProduct

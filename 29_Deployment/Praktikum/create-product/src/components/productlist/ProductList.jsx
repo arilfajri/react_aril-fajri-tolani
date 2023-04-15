@@ -15,7 +15,7 @@ const ProductList = () => {
   });
   const GET_PRODUCT = gql`
     subscription MySubscription {
-      products_list(limit: 3) {
+      products_list(order_by: { productName: asc }, limit: 3) {
         additionalDescription
         id
         imageProduct

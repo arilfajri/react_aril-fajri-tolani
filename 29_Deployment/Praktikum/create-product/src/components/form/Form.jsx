@@ -340,7 +340,6 @@ const Form = () => {
                 name="imageProduct"
                 onBlur={formik.handleBlur}
                 onChange={formik.handleChange}
-                value={formik.values.imageProduct}
               />
               {formik.touched.imageProduct && formik.errors.imageProduct && (
                 <div className="error text-danger">

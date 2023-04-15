@@ -18,15 +18,14 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/loadmore" element={<LoadMore />} />
           <Route path="/searchproduct/:name" element={<SearchProduct />} />
-          <Route path="/createproduct" element={<CreateProduct />} />
-          {/* <Route
+          <Route
             path="/createproduct"
             element={
               <ProtectedRoute isSignedIn={isSignedIn}>
                 <CreateProduct setSignedIn={setIsSignedIn} />
               </ProtectedRoute>
             }
-          /> */}
+          />
           {/* <Route
             path="/account/:id"
             element={
